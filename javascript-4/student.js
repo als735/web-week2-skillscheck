@@ -4,7 +4,7 @@
 //////////////////Step 1////////////////////
 // Create a new array called 'faveColors' and set it your three favorite colors as strings.
 
-let faveColors = ["purple", "green", "red"]; 
+let faveColors = ['purple', 'red', 'orange']; 
 
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, profileImage. 
@@ -26,10 +26,10 @@ let me = {
     superHeroName : 'Alicontre',
     homeTown : 'New Orleans',
     superPowers : ['levitation', 'teleportation', 'telepathy'], 
-    superPowerXP : function (){
-        Math.floor(Math.random() * 100) + 1 
+    superPowerXP : function () {
+        return Math.floor(Math.random() * 100) + 1 
     }, 
-    profileImage: function(){
+    profileImage: function() {
         return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
     }
 }
@@ -48,9 +48,9 @@ let homeTown = me.homeTown;
 
 // Next, create a for loop to loop over the array. If any of the colors you chose is 'blue', change it's value to '#4D4DFF' which is just a more appealing color of blue. Outside of the for loop but still inside of setColor, invoke the function called background which will take in three arguments. These arguments should be each item of your array. This is a function we created for you to set the background colors.
 
-funtction setColor(arr) {
+funtction setColor(arr){
     let colorArr = arr.splice(0, 3);  
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         if (colorArr[i] === 'blue') {
              colorArr[i] === '4D4DFF'; 
         }
@@ -59,11 +59,12 @@ funtction setColor(arr) {
 }
 
 
+
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in arr as a parameter. Loop over the arr param and run a function called createLi(), which will take each item of the array as an agument. The createLi function is a function we created to set the data on the screen. It outside the scope of this project
 
 function setPowers(arr) {
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         createLi(arr[i]) 
     }
 }
