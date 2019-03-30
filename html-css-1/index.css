@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+
+}
+
+header {
+  background: grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vw;
+  color: white;
+  font-weight: 300;
+  height: 5vh;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    width: 20vw;
+    margin-right: 5vw;
+    ;
+    font-size: 1.5rem;
+}
+
+.row-list {
+    display: flex; 
+    justify-content: space-between ; 
+    align-items: center;  
+}
+
+.row-list div {
+    padding: 0 1rem; 
+}
+
+.top-main {
+    color: yellow; 
+    background-color: black; 
+    width: 100%; 
+    height: 300px; 
+    font-size: 50px;
+    text-align: center;  
+    padding-top: 50px; 
+}
+
+
+.main-section3 {
+    display: flex; 
+    width: 100%;
+    height: 300px; 
+    background-color: white; 
+}
+
+.green-box {
+    width: 50%; 
+    height: 300px; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    display: inline-block; 
+    border-radius: 25px;
+    background:aquamarine;
+    height: 200px;
+    margin-top: 50px; 
+}
+
+.main-section2 {
+        width: 80%;
+        margin: auto;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+
+.orange-box {
+    height: 200px;
+    width: 40%; 
+    display: inline-block; 
+    background-color: orange; 
+    margin-right: 5%; 
+    margin-left: 5%;
+}
+
+.content-section {
+    display: flex; 
+    justify-content : space-around; 
+    height: 15rem; 
+    width: 100%; 
+    margin: 2.5rem; 
+}
+
+.content-section p {
+    width: 30rem; 
+    margin: 0 9rem; 
+}
+
+.content-section img {
+    width: 20rem;
+    height: 15rem; 
+    margin: 0 10vw;
+   }
+
+.bottom-footer {
+    background-color: blueviolet; 
+    width: 100%; 
+    height: 100px; 
+}
